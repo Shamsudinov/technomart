@@ -1,0 +1,364 @@
+:root {
+    --basic-red: #ee3643;
+    --basic-blue-dark: #293449;
+    --basic-blue-light: #32425C;
+    --basic-white: #ffffff;
+    --basic-order: #63A63E;
+    --hover-order: #5FBB2D;
+    --basic-header: #F1F5F7;
+    --basic-dark: #000000;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-pinklight: #F9F5F0;
+    --gold: #FFD180;
+    --social-background: #212A3A;
+    --light-white: #F1F5F7;
+    --price-secondary: #A9A9A9;
+    --lightgray: #EAEAEA; 
+    --nav-hover: #293449;
+    --hover-red: #CA2C37;
+    
+  }
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/cuprum.woff2") format("woff2"),
+         url("../fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+         url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+         url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+         url("../fonts/ptsansbold.woff") format("woff");
+}
+
+.page{
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+}
+.button{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+.button:hover{
+    background-color: var(--hover-red);
+}
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-header{
+    background-color: var(--basic-header);
+}
+.header-top-section{
+    background-color: var(--basic-blue-dark);
+    color: var(--basic-white);
+}
+.header-top-section__inner{
+}
+.logo{
+    background-color: var(--basic-red);
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.user-navigation-item__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+.button--ordering{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    color: var(--basic-white);
+    background-color: var(--basic-order);
+}
+.button--ordering:hover{
+    background-color: var(--hover-order);
+}
+.page-header__title{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+.contacts__phone{
+    border: 3px solid var(--basic-white);
+}
+.contacts__caption{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+}
+.contacts__address{
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.account__caption{
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+}
+.account__caption:hover{
+    color: var(--basic-red);
+}
+.main-navigation{
+    background-color: var(--basic-blue-light);
+}
+
+.main-navigation__link{
+    padding: 16px 24px 20px 27px;
+    font-family: "Cuprum";
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+.main-navigation__link:hover{
+    background-color: var(--nav-hover);
+}
+
+/* Promo section */
+
+.promo-card--background-yellow{
+    background-color: var(--special-yellow);
+}
+.promo-card--background-blue{
+    background-color: var(--special-blue);
+}
+.promo-card--background-lilac{
+    background-color: var(--special-lilac);
+}
+.promo-card--background-greenlight{
+    background-color: var(--special-greenlight);
+}
+.promo-card{
+    color: var(--basic-white);
+}
+.promo-card__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.button--promo{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.button--promo:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slide__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.slide__subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Popular product section*/
+
+.section-head{
+    background-color: var(--special-pinklight);
+}
+
+.section-head__title{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue-light);
+}
+.product-card{
+    border: 1px solid var(--lightgray);
+}
+.product-card__title{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+.product-card__price{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.product-card__price--old-price{
+    color: var(--price-secondary);
+}
+.product-card__price--current-price{
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+/* Brends */
+
+.brend-card__img{
+    border: 1px solid var(--lightgray);
+}
+
+/* Services */
+
+.services__title{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services__description{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.service-block__title{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue-light);
+}
+
+.service-block__description{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+
+/* About Us */
+
+.about-us-column__title,
+.contacts-column__title{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about-us-column__description,
+.contacts-column__description{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.pertners-list__item{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Footer */
+
+.page-footer-top{
+    background-color: var(--basic-blue-light);
+}
+.page-footer-bottom{
+    background-color: var(--basic-blue-dark);
+}
+.social__link{
+    background-color: var(--social-background);
+}
+.social__link:hover{
+    background-color: var(--basic-red);
+}
+.footer-contacts__address,
+.footer-contacts__phone{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--light-white);
+}
+.footer-site-menu__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--light-white);
+}
+.footer-site-menu__link:hover{
+    text-decoration: underline;
+}
+.footer-catalog-menu__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--gold);
+}
+.footer-catalog-menu__link:hover{
+    text-decoration: underline;
+}
+
+.design-copyright__caption,
+.feedback__caption{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.feedback__email,
+.design-copyright__link{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--gold);
+}
+
+.feedback__email:hover,
+.design-copyright__link:hover{
+
+    text-decoration: underline;
+}
+
+.page-footer__copyright{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
